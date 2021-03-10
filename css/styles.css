@@ -1,0 +1,103 @@
+/* Переменные */
+:root {
+  --element-color: #2f303a;
+  --hover-focus-color: #2196f3;
+}
+/* Общая стилизация */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+body li {
+  list-style: none; /* Убирает маркировку списка*/
+}
+
+/* Стилизация header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.938em;
+}
+
+.logo span {
+  color: #2196f3;
+}
+.link-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1em;
+  color: #212121;
+}
+
+.link-contact a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1em;
+  color: #757575;
+}
+
+/* Стилизация main */
+.main-filter button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625em;
+}
+.main-content li {
+  border: 1px solid #eeeeee;
+  width: 370px;
+}
+.main-content h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.25em;
+}
+.main-content span {
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-weight: normal;
+}
+/* Стилизация footer */
+.footer {
+  background-color: var(--element-color);
+}
+.link-contact li {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Hover and Focus */
+.link-nav a:hover,
+.link-nav a:focus {
+  color: var(--hover-focus-color);
+}
+.main-filter button:hover,
+.main-filter button:focus {
+  color: #ffffff;
+  background-color: var(--hover-focus-color);
+}
+.link-contact a:hover,
+.link-contact a:focus {
+  color: var(--hover-focus-color);
+}
