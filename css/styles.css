@@ -1,12 +1,19 @@
 /* Переменные */
 :root {
-  --element-color: #2f303a;
+  --section-color-dark: #2f303a;
   --hover-focus-color: #2196f3;
+  --main-color: #ffffff;
+  --section-color-light: #f5f4fa;
+  --main-font-color: #212121;
+  --button-border-radius: 4px;
+  --font-color-dark: #757575;
+  --card-border-color: #eeeeee;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 /* Общая стилизация */
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--main-font-color);
 }
 
 body li {
@@ -25,33 +32,110 @@ body li {
   font-size: 26px;
   line-height: 1.938em;
 }
+.logo-footer {
+  color: var(--main-color);
+}
 
 .logo span {
-  color: #2196f3;
+  color: var(--hover-focus-color);
 }
-.link-nav a {
+.link-nav {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1em;
-  color: #212121;
+  line-height: 1.17;
+  color: var(--main-font-color);
 }
 
-.link-contact a {
+.link-contact {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1em;
-  color: #757575;
+  color: var(--font-color-dark);
+}
+.heroi {
+  background-color: var(--section-color-dark);
+}
+.heroi-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-color);
+}
+.heroi-button {
+  background-color: var(--hover-focus-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--main-color);
+  border: none;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
 }
 
+.our-principles-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.our-principles-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--font-color-dark);
+}
+
+.what-we-do-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.our-team {
+  background-color: var(--section-color-light);
+}
+.our-team-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team-card {
+  width: 270px;
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-cart-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team-cart-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-color-dark);
+}
 /* Стилизация main */
-.main-filter button {
+.portfolio-filter {
   font-family: inherit;
   cursor: pointer;
   border: none;
-  background: #f5f4fa;
+  background: var(--section-color-light);
   border-radius: 4px;
   padding: 6px 22px;
   color: inherit;
@@ -59,45 +143,53 @@ body li {
   font-size: 16px;
   line-height: 1.625em;
 }
-.main-content li {
-  border: 1px solid #eeeeee;
+.portfolio-card {
   width: 370px;
+  border: 1px solid var(--card-border-color);
 }
-.main-content h2 {
+.portfolio-title {
   font-weight: bold;
   font-size: 18px;
-  line-height: 2.25em;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.main-content span {
+.portfolio-text {
   font-size: 16px;
-  line-height: 1.875em;
+  line-height: 1.875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--font-color-dark);
   font-weight: normal;
 }
 /* Стилизация footer */
 .footer {
-  background-color: var(--element-color);
+  background-color: var(--section-color-dark);
 }
-.link-contact li {
+.footer-adress {
   font-size: 14px;
-  line-height: 1.5em;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
-
+.link-contact {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--font-color-dark);
+}
+.footer .link-contact {
+  color: var(--footer-link-color);
+}
 /* Hover and Focus */
-.link-nav a:hover,
-.link-nav a:focus {
+.link-nav:hover,
+.link-nav:focus {
   color: var(--hover-focus-color);
 }
-.main-filter button:hover,
-.main-filter button:focus {
-  color: #ffffff;
+.portfolio-filter:hover,
+.portfolio-filter:focus {
+  color: var(--main-color);
   background-color: var(--hover-focus-color);
 }
-.link-contact a:hover,
-.link-contact a:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--hover-focus-color);
 }
