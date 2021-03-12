@@ -9,6 +9,7 @@
   --font-color-dark: #757575;
   --card-border-color: #eeeeee;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+  --dark-color: #000000;
 }
 /* Общая стилизация */
 body {
@@ -27,10 +28,10 @@ body li {
 
 .logo {
   text-decoration: none;
-  color: black;
+  color: var(--dark-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.938em;
+  line-height: 1.2;
 }
 .logo-footer {
   color: var(--main-color);
@@ -43,7 +44,7 @@ body li {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
   color: var(--main-font-color);
 }
 
@@ -52,7 +53,7 @@ body li {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1em;
+  line-height: 1.14;
   color: var(--font-color-dark);
 }
 .heroi {
@@ -65,6 +66,7 @@ body li {
   text-transform: uppercase;
   text-align: center;
   color: var(--main-color);
+  letter-spacing: 0.06em;
 }
 .heroi-button {
   background-color: var(--hover-focus-color);
@@ -141,7 +143,7 @@ body li {
   color: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625em;
+  line-height: 1.625;
 }
 .portfolio-card {
   width: 370px;
@@ -167,6 +169,7 @@ body li {
 .footer-adress {
   font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
@@ -180,15 +183,13 @@ body li {
   color: var(--footer-link-color);
 }
 /* Hover and Focus */
-.link-nav:hover,
-.link-nav:focus {
-  color: var(--hover-focus-color);
-}
 .portfolio-filter:hover,
 .portfolio-filter:focus {
   color: var(--main-color);
   background-color: var(--hover-focus-color);
 }
+.link-nav:hover,
+.link-nav:focus,
 .link-contact:hover,
 .link-contact:focus {
   color: var(--hover-focus-color);
